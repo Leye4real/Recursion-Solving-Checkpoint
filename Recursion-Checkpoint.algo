@@ -1,0 +1,16 @@
+FUNCTION palindrome_word(arr:palindrome_word) : Reverse_Word
+VAR
+    word = word.lower()  // Convert to lowercase for case insensitivity
+BEGIN
+    left = 0
+    right = len(word) - 1
+    
+    while left <= right:
+        if word[left] != word[right]:
+            RETURN False;
+        ELSE
+        left += 1
+        right -= 1
+    END_IF
+    RETURN True;
+END
